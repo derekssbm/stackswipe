@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="sticky bottom-0 z-50 bg-white shadow-md">
+    <footer className="sticky bottom-0 z-10 bg-dark-500 text-white">
       <div className="container mx-auto px-4 py-2 flex justify-between">
         <Link href="/main/profile" passHref>
           <button className="footer-button">Profile</button>

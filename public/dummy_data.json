@@ -1,0 +1,494 @@
+{
+    "userid": 1,
+    "username": "admin",
+    "email": "user@example.com",
+    "signUpDate": "2024-01-13",
+    "role": "Admin",
+    "stacks": [
+        {
+            "stackid": 1,
+            "name": "Stack 0",
+            "userid": 1,
+            "cards": [
+                {
+                    "cardid": 1,
+                    "question": "Question 0",
+                    "answer": "Answer 0",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-11-10",
+                    "timesAnsweredCorrectly": 0,
+                    "userid": 1
+                },
+                {
+                    "cardid": 2,
+                    "question": "Question 1",
+                    "answer": "Answer 1",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-02-07",
+                    "timesAnsweredCorrectly": 7,
+                    "userid": 1
+                },
+                {
+                    "cardid": 3,
+                    "question": "Question 2",
+                    "answer": "Answer 2",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-03-20",
+                    "timesAnsweredCorrectly": 8,
+                    "userid": 1
+                },
+                {
+                    "cardid": 4,
+                    "question": "Question 3",
+                    "answer": "Answer 3",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-12-22",
+                    "timesAnsweredCorrectly": 7,
+                    "userid": 1
+                },
+                {
+                    "cardid": 5,
+                    "question": "Question 4",
+                    "answer": "Answer 4",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-09-11",
+                    "timesAnsweredCorrectly": 3,
+                    "userid": 1
+                },
+                {
+                    "cardid": 6,
+                    "question": "Question 5",
+                    "answer": "Answer 5",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-09-04",
+                    "timesAnsweredCorrectly": 5,
+                    "userid": 1
+                },
+                {
+                    "cardid": 7,
+                    "question": "Question 6",
+                    "answer": "Answer 6",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2025-05-17",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 8,
+                    "question": "Question 7",
+                    "answer": "Answer 7",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2025-10-20",
+                    "timesAnsweredCorrectly": 3,
+                    "userid": 1
+                },
+                {
+                    "cardid": 9,
+                    "question": "Question 8",
+                    "answer": "Answer 8",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2024-11-06",
+                    "timesAnsweredCorrectly": 4,
+                    "userid": 1
+                },
+                {
+                    "cardid": 10,
+                    "question": "Question 9",
+                    "answer": "Answer 9",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2024-01-26",
+                    "timesAnsweredCorrectly": 2,
+                    "userid": 1
+                }
+            ]
+        },
+        {
+            "stackid": 2,
+            "name": "Stack 1",
+            "userid": 1,
+            "cards": [
+                {
+                    "cardid": 11,
+                    "question": "Question 0",
+                    "answer": "Answer 0",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-12-28",
+                    "timesAnsweredCorrectly": 4,
+                    "userid": 1
+                },
+                {
+                    "cardid": 12,
+                    "question": "Question 1",
+                    "answer": "Answer 1",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-04-27",
+                    "timesAnsweredCorrectly": 5,
+                    "userid": 1
+                },
+                {
+                    "cardid": 13,
+                    "question": "Question 2",
+                    "answer": "Answer 2",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-04-08",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 14,
+                    "question": "Question 3",
+                    "answer": "Answer 3",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-02-04",
+                    "timesAnsweredCorrectly": 7,
+                    "userid": 1
+                },
+                {
+                    "cardid": 15,
+                    "question": "Question 4",
+                    "answer": "Answer 4",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-06-22",
+                    "timesAnsweredCorrectly": 1,
+                    "userid": 1
+                },
+                {
+                    "cardid": 16,
+                    "question": "Question 5",
+                    "answer": "Answer 5",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-09-20",
+                    "timesAnsweredCorrectly": 3,
+                    "userid": 1
+                },
+                {
+                    "cardid": 17,
+                    "question": "Question 6",
+                    "answer": "Answer 6",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2024-02-17",
+                    "timesAnsweredCorrectly": 9,
+                    "userid": 1
+                },
+                {
+                    "cardid": 18,
+                    "question": "Question 7",
+                    "answer": "Answer 7",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2024-05-16",
+                    "timesAnsweredCorrectly": 4,
+                    "userid": 1
+                },
+                {
+                    "cardid": 19,
+                    "question": "Question 8",
+                    "answer": "Answer 8",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2025-03-30",
+                    "timesAnsweredCorrectly": 10,
+                    "userid": 1
+                },
+                {
+                    "cardid": 20,
+                    "question": "Question 9",
+                    "answer": "Answer 9",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2024-10-30",
+                    "timesAnsweredCorrectly": 13,
+                    "userid": 1
+                }
+            ]
+        },
+        {
+            "stackid": 3,
+            "name": "Stack 2",
+            "userid": 1,
+            "cards": [
+                {
+                    "cardid": 21,
+                    "question": "Question 0",
+                    "answer": "Answer 0",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-02-14",
+                    "timesAnsweredCorrectly": 12,
+                    "userid": 1
+                },
+                {
+                    "cardid": 22,
+                    "question": "Question 1",
+                    "answer": "Answer 1",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-09-28",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 23,
+                    "question": "Question 2",
+                    "answer": "Answer 2",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-03-19",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 24,
+                    "question": "Question 3",
+                    "answer": "Answer 3",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-09-16",
+                    "timesAnsweredCorrectly": 13,
+                    "userid": 1
+                },
+                {
+                    "cardid": 25,
+                    "question": "Question 4",
+                    "answer": "Answer 4",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-09-17",
+                    "timesAnsweredCorrectly": 4,
+                    "userid": 1
+                },
+                {
+                    "cardid": 26,
+                    "question": "Question 5",
+                    "answer": "Answer 5",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-08-15",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 27,
+                    "question": "Question 6",
+                    "answer": "Answer 6",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2024-10-14",
+                    "timesAnsweredCorrectly": 0,
+                    "userid": 1
+                },
+                {
+                    "cardid": 28,
+                    "question": "Question 7",
+                    "answer": "Answer 7",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2025-05-07",
+                    "timesAnsweredCorrectly": 0,
+                    "userid": 1
+                },
+                {
+                    "cardid": 29,
+                    "question": "Question 8",
+                    "answer": "Answer 8",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2024-04-17",
+                    "timesAnsweredCorrectly": 2,
+                    "userid": 1
+                },
+                {
+                    "cardid": 30,
+                    "question": "Question 9",
+                    "answer": "Answer 9",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2024-10-05",
+                    "timesAnsweredCorrectly": 15,
+                    "userid": 1
+                }
+            ]
+        },
+        {
+            "stackid": 4,
+            "name": "Stack 3",
+            "userid": 1,
+            "cards": [
+                {
+                    "cardid": 31,
+                    "question": "Question 0",
+                    "answer": "Answer 0",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2025-03-16",
+                    "timesAnsweredCorrectly": 9,
+                    "userid": 1
+                },
+                {
+                    "cardid": 32,
+                    "question": "Question 1",
+                    "answer": "Answer 1",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2024-12-02",
+                    "timesAnsweredCorrectly": 10,
+                    "userid": 1
+                },
+                {
+                    "cardid": 33,
+                    "question": "Question 2",
+                    "answer": "Answer 2",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2025-06-08",
+                    "timesAnsweredCorrectly": 12,
+                    "userid": 1
+                },
+                {
+                    "cardid": 34,
+                    "question": "Question 3",
+                    "answer": "Answer 3",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2025-01-06",
+                    "timesAnsweredCorrectly": 13,
+                    "userid": 1
+                },
+                {
+                    "cardid": 35,
+                    "question": "Question 4",
+                    "answer": "Answer 4",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2024-11-18",
+                    "timesAnsweredCorrectly": 3,
+                    "userid": 1
+                },
+                {
+                    "cardid": 36,
+                    "question": "Question 5",
+                    "answer": "Answer 5",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2024-11-08",
+                    "timesAnsweredCorrectly": 12,
+                    "userid": 1
+                },
+                {
+                    "cardid": 37,
+                    "question": "Question 6",
+                    "answer": "Answer 6",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2024-07-02",
+                    "timesAnsweredCorrectly": 13,
+                    "userid": 1
+                },
+                {
+                    "cardid": 38,
+                    "question": "Question 7",
+                    "answer": "Answer 7",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2025-01-31",
+                    "timesAnsweredCorrectly": 7,
+                    "userid": 1
+                },
+                {
+                    "cardid": 39,
+                    "question": "Question 8",
+                    "answer": "Answer 8",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2025-06-04",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 40,
+                    "question": "Question 9",
+                    "answer": "Answer 9",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2025-09-01",
+                    "timesAnsweredCorrectly": 9,
+                    "userid": 1
+                }
+            ]
+        },
+        {
+            "stackid": 5,
+            "name": "Stack 4",
+            "userid": 1,
+            "cards": [
+                {
+                    "cardid": 41,
+                    "question": "Question 0",
+                    "answer": "Answer 0",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-06-10",
+                    "timesAnsweredCorrectly": 8,
+                    "userid": 1
+                },
+                {
+                    "cardid": 42,
+                    "question": "Question 1",
+                    "answer": "Answer 1",
+                    "difficulty": "easy",
+                    "nextReviewDate": "2023-04-25",
+                    "timesAnsweredCorrectly": 6,
+                    "userid": 1
+                },
+                {
+                    "cardid": 43,
+                    "question": "Question 2",
+                    "answer": "Answer 2",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-11-23",
+                    "timesAnsweredCorrectly": 9,
+                    "userid": 1
+                },
+                {
+                    "cardid": 44,
+                    "question": "Question 3",
+                    "answer": "Answer 3",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-06-12",
+                    "timesAnsweredCorrectly": 10,
+                    "userid": 1
+                },
+                {
+                    "cardid": 45,
+                    "question": "Question 4",
+                    "answer": "Answer 4",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-09-18",
+                    "timesAnsweredCorrectly": 2,
+                    "userid": 1
+                },
+                {
+                    "cardid": 46,
+                    "question": "Question 5",
+                    "answer": "Answer 5",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-03-17",
+                    "timesAnsweredCorrectly": 2,
+                    "userid": 1
+                },
+                {
+                    "cardid": 47,
+                    "question": "Question 6",
+                    "answer": "Answer 6",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-06-21",
+                    "timesAnsweredCorrectly": 5,
+                    "userid": 1
+                },
+                {
+                    "cardid": 48,
+                    "question": "Question 7",
+                    "answer": "Answer 7",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-09-21",
+                    "timesAnsweredCorrectly": 11,
+                    "userid": 1
+                },
+                {
+                    "cardid": 49,
+                    "question": "Question 8",
+                    "answer": "Answer 8",
+                    "difficulty": "medium",
+                    "nextReviewDate": "2023-08-25",
+                    "timesAnsweredCorrectly": 14,
+                    "userid": 1
+                },
+                {
+                    "cardid": 50,
+                    "question": "Question 9",
+                    "answer": "Answer 9",
+                    "difficulty": "hard",
+                    "nextReviewDate": "2023-07-01",
+                    "timesAnsweredCorrectly": 0,
+                    "userid": 1
+                }
+            ]
+        }
+    ]
+}
