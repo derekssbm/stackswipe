@@ -1,109 +1,53 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Stack from "@/components/Stack";
 
-const LoginPage = () => {
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    // Handle login logic here
-  };
+interface CardProps {
+  cardid: number;
+  question: string;
+  answer: string;
+  difficulty: string;
+  nextReviewDate: string;
+  timesAnsweredCorrectly: number;
+}
+
+interface StackProps {
+  stackid: number;
+  name: string;
+  cards: CardProps[];
+}
+
+const StackPage = () => {
+  const [stacks, setStacks] = useState<StackProps[]>([]); // Initial state as an empty array
+
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("/data/dummy_data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const { stacks } = data;
+          setStacks(stacks); // Set the stacks array directly
+          console.log(stacks);
+        })
+        .catch((error) => {
+          console.error("Error fetching data: ", error);
+        });
+    }, 1500);
+  }, []);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      {/* Logo Placeholder */}
-      <div className="mb-4"> {/* Logo will go here */} </div>
-
-      <form onSubmit={handleSubmit} className="w-full max-w-xs">
-        <div className="mb-4">
-          <label htmlFor="username" className="label">
-            <span className="label-text">Username</span>
-          </label>
-          <input
-            id="username"
-            type="text"
-            placeholder="Username"
-            className="input input-bordered w-full"
-          />
-        </div>
-        <div className="mb-6">
-          <label htmlFor="password" className="label">
-            <span className="label-text">Password</span>
-          </label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Password"
-            className="input input-bordered w-full"
-          />
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-        <div className="flex items-center justify-between">
-          <button type="submit" className="btn btn-primary">
-            Sign In
-          </button>
-        </div>
-      </form>
-
-      {/* Credits Text Placeholder */}
-      <p className="mt-4 text-center text-sm">
-        © 2024 Your App Name. All rights reserved.
-      </p>
+    <div>
+      {stacks.map((stack) => (
+        <Stack
+          key={stack.stackid}
+          stackid={stack.stackid}
+          name={stack.name}
+          cards={stack.cards}
+        />
+      ))}
     </div>
   );
 };
 
-export default LoginPage;
+export default StackPage;

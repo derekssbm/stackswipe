@@ -1,23 +1,33 @@
 "use client";
-import Header from "@/components/Header";
+
 import "../../styles/globals.css";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-//import { GlobalProvider } from "@/context/globalContext";
+import { usePathname } from "next/navigation";
 
 export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // URL -> /shop/shoes/nike-air-max-97
+  // `params` -> { tag: 'shoes', item: 'nike-air-max-97' }
+
+  const getCurrentPage = () => {
+    let pathname = usePathname().replace("/main/", "").replace("-", " ");
+    pathname =
+      pathname.slice(0, 1).toUpperCase() +
+      usePathname().replace("/main/", "").replace("-", " ").slice(1);
+
+    //console.log(pathname);
+    return pathname;
+  };
+
   return (
-    <html lang="en">
-      <body>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <div className="flex flex-col min-h-screen">
+      <Header title={getCurrentPage()} />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </div>
   );
 }

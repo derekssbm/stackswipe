@@ -1,4 +1,4 @@
-//"use client";
+"use client";
 
 // src/components/Footer.tsx
 import React from "react";
