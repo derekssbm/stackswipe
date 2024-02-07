@@ -7,486 +7,506 @@
     "stacks": [
         {
             "stackid": 1,
-            "name": "Stack 0",
+            "name": "Networking Fundamentals",
             "userid": 1,
             "cards": [
                 {
                     "cardid": 1,
-                    "question": "Question 0",
-                    "answer": "Answer 0",
+                    "question": "What is the OSI model and how many layers does it have?",
+                    "answer": "The OSI (Open Systems Interconnection) model is a conceptual framework used to understand network communication. It consists of 7 layers.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-11-10",
                     "timesAnsweredCorrectly": 0,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 2,
-                    "question": "Question 1",
-                    "answer": "Answer 1",
+                    "question": "What is an IP address and what are the two versions commonly used?",
+                    "answer": "An IP address is a numerical label assigned to each device on a computer network. The two commonly used versions are IPv4 and IPv6.",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-02-07",
                     "timesAnsweredCorrectly": 7,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 3,
-                    "question": "Question 2",
-                    "answer": "Answer 2",
+                    "question": "What is a subnet mask, and how does it relate to IP addresses?",
+                    "answer": "A subnet mask is used to divide an IP address into network and host portions. It determines which part of the IP address identifies the network and which part identifies the device within the network.",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-03-20",
                     "timesAnsweredCorrectly": 8,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 4,
-                    "question": "Question 3",
-                    "answer": "Answer 3",
+                    "question": "Explain the difference between TCP and UDP protocols.",
+                    "answer": "TCP (Transmission Control Protocol) is a reliable, connection-oriented protocol, while UDP (User Datagram Protocol) is a faster, connectionless protocol. TCP ensures data delivery and sequencing, while UDP does not guarantee these features.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-12-22",
                     "timesAnsweredCorrectly": 7,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 5,
-                    "question": "Question 4",
-                    "answer": "Answer 4",
+                    "question": "What is a router, and what role does it play in a network?",
+                    "answer": "A router is a networking device that forwards data packets between computer networks. It plays a crucial role in determining the best path for data to travel between different networks.",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-09-11",
                     "timesAnsweredCorrectly": 3,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 6,
-                    "question": "Question 5",
-                    "answer": "Answer 5",
+                    "question": "What is a firewall, and why is it important for network security?",
+                    "answer": "A firewall is a security device or software that monitors and controls incoming and outgoing network traffic. It is essential for protecting a network from unauthorized access and cyberattacks.",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-09-04",
                     "timesAnsweredCorrectly": 5,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 7,
-                    "question": "Question 6",
-                    "answer": "Answer 6",
+                    "question": "What is the purpose of DNS (Domain Name System) in networking?",
+                    "answer": "DNS translates human-readable domain names into IP addresses, allowing users to access websites and resources on the internet using domain names instead of IP addresses.",
                     "difficulty": "hard",
                     "nextReviewDate": "2025-05-17",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 8,
-                    "question": "Question 7",
-                    "answer": "Answer 7",
+                    "question": "What is NAT (Network Address Translation) and why is it used in home networks?",
+                    "answer": "NAT is a technique that allows multiple devices on a home network to share a single public IP address. It is used to conserve IP addresses and improve network security.",
                     "difficulty": "easy",
                     "nextReviewDate": "2025-10-20",
                     "timesAnsweredCorrectly": 3,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 9,
-                    "question": "Question 8",
-                    "answer": "Answer 8",
+                    "question": "What is a VLAN (Virtual Local Area Network), and how does it work?",
+                    "answer": "A VLAN is a logical segmentation of a physical network into multiple isolated virtual networks. It works by tagging network traffic with VLAN identifiers to separate traffic between different VLANs.",
                     "difficulty": "medium",
                     "nextReviewDate": "2024-11-06",
                     "timesAnsweredCorrectly": 4,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 10,
-                    "question": "Question 9",
-                    "answer": "Answer 9",
+                    "question": "Explain the concept of a subnet and its purpose in IP addressing.",
+                    "answer": "A subnet is a portion of an IP network, and it is used to divide a larger network into smaller, manageable segments. It helps in efficient IP address allocation and routing within a network.",
                     "difficulty": "medium",
                     "nextReviewDate": "2024-01-26",
                     "timesAnsweredCorrectly": 2,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 }
             ]
         },
         {
             "stackid": 2,
-            "name": "Stack 1",
+            "name": "AWS CloudFormation",
             "userid": 1,
             "cards": [
                 {
                     "cardid": 11,
-                    "question": "Question 0",
-                    "answer": "Answer 0",
+                    "question": "What are the elements of an AWS CloudFormation template?",
+                    "answer": "AWS CloudFormation templates are JSON or YAML formatted text files that are comprised of five essential elements: parameters, output values, data tables for lookup, resources and their configuration values, and a template format version number [6][70].",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-12-28",
                     "timesAnsweredCorrectly": 4,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 12,
-                    "question": "Question 1",
-                    "answer": "Answer 1",
+                    "question": "Can I manage individual AWS resources that are part of an AWS CloudFormation stack?",
+                    "answer": "Yes, you can manage individual AWS resources within a CloudFormation stack, but it is recommended to let CloudFormation handle changes for better management of rules, best practices, and compliance controls [6].",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-04-27",
                     "timesAnsweredCorrectly": 5,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 13,
-                    "question": "Question 2",
-                    "answer": "Answer 2",
+                    "question": "What happens when one of the resources in a stack cannot be created successfully?",
+                    "answer": "If a resource in a stack cannot be created, CloudFormation automatically rolls back and terminates all the resources that were created, reverting the stack to the last known stable configuration [6][71].",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-04-08",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 14,
-                    "question": "Question 3",
-                    "answer": "Answer 3",
+                    "question": "What is the AWS CloudFormation Public Registry?",
+                    "answer": "The CloudFormation Public Registry is a searchable and managed catalog of extensions that contains resource types and modules published by AWS Partner Network Partners and the developer community, allowing for easier discovery and use [6].",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-02-04",
                     "timesAnsweredCorrectly": 7,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 15,
-                    "question": "Question 4",
-                    "answer": "Answer 4",
+                    "question": "Can I create stacks in a Virtual Private Cloud (VPC)?",
+                    "answer": "Yes, AWS CloudFormation supports creating VPCs, subnets, gateways, route tables, network ACLs, and various other resources within a VPC [6].",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-06-22",
                     "timesAnsweredCorrectly": 1,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 16,
-                    "question": "Question 5",
-                    "answer": "Answer 5",
+                    "question": "Can I update my stack after it has been created?",
+                    "answer": "Yes, you can modify and update the resources in your existing stacks using CloudFormation in a controlled and predictable way [6].",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-09-20",
                     "timesAnsweredCorrectly": 3,
-                    "userid": 1
+                    "userid": 1,
+                        "isFlipped": false
                 },
                 {
                     "cardid": 17,
-                    "question": "Question 6",
-                    "answer": "Answer 6",
+                    "question": "How do you upgrade or downgrade a system with near-zero downtime?",
+                    "answer": "To upgrade or downgrade with near-zero downtime, use migration steps such as launching a new instance with the desired specifications, installing updates and applications, testing, and then deploying the new instance to replace the old one [9].",
                     "difficulty": "easy",
                     "nextReviewDate": "2024-02-17",
                     "timesAnsweredCorrectly": 9,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 18,
-                    "question": "Question 7",
-                    "answer": "Answer 7",
+                    "question": "What are the steps involved in a CloudFormation Solution?",
+                    "answer": "Steps include creating or using an existing CloudFormation template, saving the code in an S3 bucket, and then using AWS CloudFormation to create a stack on your template [9].",
                     "difficulty": "hard",
                     "nextReviewDate": "2024-05-16",
                     "timesAnsweredCorrectly": 4,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 19,
-                    "question": "Question 8",
-                    "answer": "Answer 8",
+                    "question": "What is the relation between an Availability Zone and a Region?",
+                    "answer": "AWS regions are separate geographical areas, while availability zones are isolated areas within those regions that can replicate themselves when required [9].",
                     "difficulty": "hard",
                     "nextReviewDate": "2025-03-30",
                     "timesAnsweredCorrectly": 10,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 20,
-                    "question": "Question 9",
-                    "answer": "Answer 9",
+                    "question": "What is Amazon S3 and how does it relate to AWS CloudFormation?",
+                    "answer": "Amazon S3 is a storage service that can store and retrieve any amount of data from anywhere, and it can be used with AWS CloudFormation to host templates or manage data related to CloudFormation stacks [9][45].",
                     "difficulty": "hard",
                     "nextReviewDate": "2024-10-30",
                     "timesAnsweredCorrectly": 13,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 }
             ]
         },
         {
             "stackid": 3,
-            "name": "Stack 2",
+            "name": "Python",
             "userid": 1,
             "cards": [
                 {
                     "cardid": 21,
-                    "question": "Question 0",
-                    "answer": "Answer 0",
+                    "question": "What is Python and why is it used?",
+                    "answer": "Python is a high-level, interpreted, interactive and object-oriented scripting language. It is used due to its simplicity and readability, wide range of applications, and strong support for integration with other languages and tools.",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-02-14",
                     "timesAnsweredCorrectly": 12,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 22,
-                    "question": "Question 1",
-                    "answer": "Answer 1",
+                    "question": "What is a list comprehension in Python?",
+                    "answer": "List comprehension provides a concise way to create lists based on existing lists. In Python, it consists of brackets containing an expression followed by a for statement inside the brackets.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-09-28",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+"isFlipped": false
                 },
                 {
                     "cardid": 23,
-                    "question": "Question 2",
-                    "answer": "Answer 2",
+                    "question": "What is a decorator in Python?",
+                    "answer": "Decorators allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-03-19",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 24,
-                    "question": "Question 3",
-                    "answer": "Answer 3",
+                    "question": "What is a lambda function in Python?",
+                    "answer": "Lambda functions are small anonymous functions that are defined with the lambda keyword, rather than the def keyword like normal functions.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-09-16",
                     "timesAnsweredCorrectly": 13,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 25,
-                    "question": "Question 4",
-                    "answer": "Answer 4",
+                    "question": "What is a generator in Python?",
+                    "answer": "Generators are a simple way of creating iterators. They do not store all the values in memory, they generate each value on the fly.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-09-17",
                     "timesAnsweredCorrectly": 4,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 26,
-                    "question": "Question 5",
-                    "answer": "Answer 5",
+                    "question": "What is the difference between a tuple and a list in Python?",
+                    "answer": "Tuples are immutable sequences, typically used to hold collections of heterogeneous data. Lists are mutable sequences, typically used to hold collections of homogeneous data.",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-08-15",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 27,
-                    "question": "Question 6",
-                    "answer": "Answer 6",
+                    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+                    "answer": "The Global Interpreter Lock, or GIL, is a mechanism used in the Python interpreter that prevents multiple native threads from executing Python bytecodes at once.",
                     "difficulty": "easy",
                     "nextReviewDate": "2024-10-14",
                     "timesAnsweredCorrectly": 0,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 28,
-                    "question": "Question 7",
-                    "answer": "Answer 7",
+                    "question": "What is a class in Python?",
+                    "answer": "Classes provide a means of encapsulating data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made.",
                     "difficulty": "medium",
                     "nextReviewDate": "2025-05-07",
                     "timesAnsweredCorrectly": 0,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 29,
-                    "question": "Question 8",
-                    "answer": "Answer 8",
+                    "question": "What is exception handling in Python?",
+                    "answer": "Exception handling in Python is done using try, except, finally blocks. The code that could potentially raise an exception is placed in a try block. The except block contains the code that handles the exception.",
                     "difficulty": "medium",
                     "nextReviewDate": "2024-04-17",
                     "timesAnsweredCorrectly": 2,
-                    "userid": 1
-                },
-                {
-                    "cardid": 30,
-                    "question": "Question 9",
-                    "answer": "Answer 9",
-                    "difficulty": "easy",
-                    "nextReviewDate": "2024-10-05",
-                    "timesAnsweredCorrectly": 15,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 }
             ]
         },
         {
             "stackid": 4,
-            "name": "Stack 3",
+            "name": "Java",
             "userid": 1,
             "cards": [
                 {
                     "cardid": 31,
-                    "question": "Question 0",
-                    "answer": "Answer 0",
+                    "question": "What is Java and why is it used?",
+                    "answer": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is used for building enterprise-scale applications, Android apps, web applications, etc.",
                     "difficulty": "medium",
                     "nextReviewDate": "2025-03-16",
                     "timesAnsweredCorrectly": 9,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 32,
-                    "question": "Question 1",
-                    "answer": "Answer 1",
+                    "question": "What is a class in Java?",
+                    "answer": "A class in Java is a blueprint from which individual objects are created. It defines the variables and the methods to manipulate these variables.",
                     "difficulty": "easy",
                     "nextReviewDate": "2024-12-02",
                     "timesAnsweredCorrectly": 10,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 33,
-                    "question": "Question 2",
-                    "answer": "Answer 2",
+                    "question": "What is an interface in Java?",
+                    "answer": "In Java, an interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. It provides a way to ensure that a class adheres to a certain contract.",
                     "difficulty": "easy",
                     "nextReviewDate": "2025-06-08",
                     "timesAnsweredCorrectly": 12,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 34,
-                    "question": "Question 3",
-                    "answer": "Answer 3",
+                    "question": "What is a constructor in Java?",
+                    "answer": "A constructor in Java is a block of code that initializes the newly created object. It is called automatically when an instance of an object is created.",
                     "difficulty": "medium",
                     "nextReviewDate": "2025-01-06",
                     "timesAnsweredCorrectly": 13,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 35,
-                    "question": "Question 4",
-                    "answer": "Answer 4",
+                    "question": "What is inheritance in Java?",
+                    "answer": "Inheritance in Java is a feature that allows one class to inherit the fields and methods of another class. It promotes the concept of reusability and is used to reduce the complexity of the program.",
                     "difficulty": "medium",
                     "nextReviewDate": "2024-11-18",
                     "timesAnsweredCorrectly": 3,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 36,
-                    "question": "Question 5",
-                    "answer": "Answer 5",
+                    "question": "What is polymorphism in Java?",
+                    "answer": "Polymorphism in Java is a concept by which we can perform a single action in different ways. There are two types of polymorphism in Java: compile-time polymorphism (method overloading) and runtime polymorphism (method overriding).",
                     "difficulty": "easy",
                     "nextReviewDate": "2024-11-08",
                     "timesAnsweredCorrectly": 12,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 37,
-                    "question": "Question 6",
-                    "answer": "Answer 6",
+                    "question": "What is an abstract class in Java?",
+                    "answer": "An abstract class in Java is a class that cannot be instantiated and is always declared abstract. It may contain both abstract methods (methods without a body) and concrete methods (regular methods with a body).",
                     "difficulty": "medium",
                     "nextReviewDate": "2024-07-02",
                     "timesAnsweredCorrectly": 13,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 38,
-                    "question": "Question 7",
-                    "answer": "Answer 7",
+                    "question": "What is the Java Virtual Machine (JVM)?",
+                    "answer": "The Java Virtual Machine (JVM) is an abstract computing machine, having an architecture that is separate from the host machines. JVM is responsible for loading Java classes into memory, linking them, and executing them.",
                     "difficulty": "easy",
                     "nextReviewDate": "2025-01-31",
                     "timesAnsweredCorrectly": 7,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 39,
-                    "question": "Question 8",
-                    "answer": "Answer 8",
+                    "question": "What is the difference between final, finally, and finalize in Java?",
+                    "answer": "Final is a keyword in Java that makes a variable constant, i.e., it cannot be changed once assigned. Finally is a keyword that is used to indicate a block of code that will be executed regardless of whether an exception is thrown or caught. Finalize is a method in Object class that is invoked just before the object is garbage collected.",
                     "difficulty": "medium",
                     "nextReviewDate": "2025-06-04",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
-                },
-                {
-                    "cardid": 40,
-                    "question": "Question 9",
-                    "answer": "Answer 9",
-                    "difficulty": "easy",
-                    "nextReviewDate": "2025-09-01",
-                    "timesAnsweredCorrectly": 9,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 }
             ]
         },
         {
             "stackid": 5,
-            "name": "Stack 4",
+            "name": "JavaScript",
             "userid": 1,
             "cards": [
                 {
                     "cardid": 41,
-                    "question": "Question 0",
-                    "answer": "Answer 0",
+                    "question": "What is JavaScript and why is it used?",
+                    "answer": "JavaScript is a popular programming language primarily used for enhancing web pages to be more interactive and user-friendly. It is used to make websites more responsive and to build web applications.",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-06-10",
                     "timesAnsweredCorrectly": 8,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 42,
-                    "question": "Question 1",
-                    "answer": "Answer 1",
+                    "question": "What is a closure in JavaScript?",
+                    "answer": "A closure in JavaScript is a function that has access to its own scope, the outer function's scope, and the global scope. Closures are created every time a function is created, at function creation time.",
                     "difficulty": "easy",
                     "nextReviewDate": "2023-04-25",
                     "timesAnsweredCorrectly": 6,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 43,
-                    "question": "Question 2",
-                    "answer": "Answer 2",
+                    "question": "What is hoisting in JavaScript?",
+                    "answer": "Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase. This means you can use variables and functions before they are declared.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-11-23",
                     "timesAnsweredCorrectly": 9,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 44,
-                    "question": "Question 3",
-                    "answer": "Answer 3",
+                    "question": "What is event propagation in JavaScript?",
+                    "answer": "Event propagation in JavaScript describes how events flow through the DOM tree. When an event occurs, it travels up the DOM tree, triggering handlers on parent elements until it reaches the root element. Event propagation can be stopped using stopPropagation().",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-06-12",
                     "timesAnsweredCorrectly": 10,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 45,
-                    "question": "Question 4",
-                    "answer": "Answer 4",
+                    "question": "What is the difference between null and undefined in JavaScript?",
+                    "answer": "In JavaScript, null is an assignment value that means no value or no object. It implies an empty or non-existent value or object. On the other hand, undefined means a variable has been declared but has not yet been assigned a value.",
                     "difficulty": "hard",
                     "nextReviewDate": "2023-09-18",
                     "timesAnsweredCorrectly": 2,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 46,
-                    "question": "Question 5",
-                    "answer": "Answer 5",
+                    "question": "What is a callback function in JavaScript?",
+                    "answer": "A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-03-17",
                     "timesAnsweredCorrectly": 2,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 47,
-                    "question": "Question 6",
-                    "answer": "Answer 6",
+                    "question": "What is the Document Object Model (DOM) in JavaScript?",
+                    "answer": "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of objects, where each object represents a part of the document, such as an element, attribute, or piece of text.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-06-21",
                     "timesAnsweredCorrectly": 5,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 48,
-                    "question": "Question 7",
-                    "answer": "Answer 7",
+                    "question": "What is the difference between var, let, and const in JavaScript?",
+                    "answer": "var is function scoped, let is block scoped, and const is block scoped but the value cannot be reassigned. var is hoisted, let and const are not hoisted. var can be updated and redeclared, let and const cannot be updated but can be redeclared.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-09-21",
                     "timesAnsweredCorrectly": 11,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 },
                 {
                     "cardid": 49,
-                    "question": "Question 8",
-                    "answer": "Answer 8",
+                    "question": "What is asynchronous JavaScript?",
+                    "answer": "Asynchronous JavaScript is a way of writing JavaScript code so that some parts of the code don't have to wait for others to finish. This is done using techniques such as promises, async/await, and callbacks.",
                     "difficulty": "medium",
                     "nextReviewDate": "2023-08-25",
                     "timesAnsweredCorrectly": 14,
-                    "userid": 1
-                },
-                {
-                    "cardid": 50,
-                    "question": "Question 9",
-                    "answer": "Answer 9",
-                    "difficulty": "hard",
-                    "nextReviewDate": "2023-07-01",
-                    "timesAnsweredCorrectly": 0,
-                    "userid": 1
+                    "userid": 1,
+                    "isFlipped": false
                 }
             ]
         }

@@ -35,7 +35,7 @@ const ProfileCard: React.FC = () => {
     <div className="container mx-auto my-10 p-5">
       {profile ? (
         // Profile content
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-700 shadow-xl">
           <div className="card-body">
             <h2 className="card-title text-3xl">{profile.username}</h2>
             <p className="text-lg">

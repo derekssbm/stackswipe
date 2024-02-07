@@ -27,7 +27,7 @@ export default function MainLayout({
     <div className="flex flex-col min-h-screen">
       <Header title={getCurrentPage()} />
       <main className="flex-1">{children}</main>
-      <Footer />
+      <Footer selected={getCurrentPage()} />
     </div>
   );
 }

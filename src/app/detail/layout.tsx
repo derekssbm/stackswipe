@@ -34,6 +34,7 @@ export default function LoginLayout({
       }}
       exit={{ y: "100vh" }}
       className="flex flex-col h-screen"
+      style={{ overflowX: "hidden" }}
     >
       <div className="flex flex-col min-h-screen">
         <Header title={getCurrentPage()} />

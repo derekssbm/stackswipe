@@ -8,7 +8,65 @@ interface CardProps {
   difficulty: string;
   nextReviewDate: string;
   timesAnsweredCorrectly: number;
+  isFlipped: boolean;
 }
+
+interface FrontProps {
+  question: string;
+}
+
+interface BackProps {
+  answer: string;
+}
+
+interface Props {
+  isFlipped: boolean;
+}
+
+// Spring animation parameters
+const spring = {
+  type: "spring",
+  stiffness: 300,
+  damping: 40,
+};
+
+// Front of the Card Component
+const CardFront = ({ question }: FrontProps) => (
+  <div className="card bg-slate-700 shadow-2xl p-0 mx-10 my-11">
+    <div
+      className="card-body py-2 px-4"
+      style={{ overflowY: "auto", maxHeight: "500px" }}
+    >
+      <h2 className="card-title">Question</h2>
+      <div className="divider m-0"></div>
+      <div
+        className="mb-4"
+        style={{ overflowY: "auto", maxHeight: "400px", minHeight: "400px" }}
+      >
+        <p>{question}</p>
+      </div>
+    </div>
+  </div>
+);
+
+// Back of the Card Component
+const CardBack = ({ answer }: BackProps) => (
+  <div className="card bg-slate-700 shadow-2xl p-0 mx-10 my-11">
+    <div
+      className="card-body py-2 px-4"
+      style={{ overflowY: "auto", maxHeight: "500px" }}
+    >
+      <h2 className="card-title">Answer</h2>
+      <div className="divider m-0"></div>
+      <div
+        className="mb-4"
+        style={{ overflowY: "auto", maxHeight: "400px", minHeight: "400px" }}
+      >
+        <p>{answer}</p>
+      </div>
+    </div>
+  </div>
+);
 
 const LearnCard = ({
   cardid,
@@ -17,112 +75,54 @@ const LearnCard = ({
   difficulty,
   nextReviewDate,
   timesAnsweredCorrectly,
+  isFlipped,
 }: CardProps) => {
-  const [isFlipped, setIsFlipped] = useState(true);
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-  };
-
-  const variants = {
-    front: { rotateY: 0 },
-    back: { rotateY: 180 },
-  };
-
   return (
-    <>
+    <div className="flex justify-center">
       <motion.div
-        variants={variants}
-        animate={isFlipped ? "front" : "back"}
-        transition={{ duration: 0.6, flip: Infinity }}
         style={{
-          backfaceVisibility: "hidden",
+          perspective: "1200px",
           transformStyle: "preserve-3d",
-          rotateY: 180,
+          width: "420px",
+          height: "560px",
         }}
       >
-        {isFlipped && (
-          <div className="card bg-slate-700 shadow-xl p-0 mx-8 my-6">
-            <div
-              className="card-body py-2 px-4"
-              style={{ overflowY: "auto", maxHeight: "700px" }}
-            >
-              <h2 className="card-title">Frage</h2>
-              <div className="divider m-0"></div>
-              <div
-                className="mb-4"
-                style={{ overflowY: "auto", maxHeight: "460px" }}
-              >
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Blanditiis veritatis soluta pariatur molestiae consectetur at
-                  error nisi repellat. Tempore eius distinctio nostrum obcaecati
-                  ipsa architecto vel et ab rerum quaerat?Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Blanditiis veritatis soluta
-                  pariatur molestiae consectetur at error nisi repellat. Tempore
-                  eius distinctio nostrum obcaecati ipsa architecto vel et ab
-                  rerum quaerat?Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Blanditiis veritatis soluta pariatur
-                  molestiae consectetur at error nisi repellat. Tempore eius
-                  distinctio nostrum obcaecati ipsa architecto vel et ab rerum
-                  quaerat?Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Blanditiis veritatis soluta pariatur molestiae
-                  consectetur at error nisi repellat. Tempore eius distinctio
-                  nostrum obcaecati ipsa architecto vel et ab rerum quaerat?
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+        <motion.div
+          animate={{ rotateY: isFlipped ? 180 : 0 }}
+          transition={spring}
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "relative",
+            transformStyle: "preserve-3d",
+          }}
+        >
+          <motion.div
+            style={{
+              backfaceVisibility: "hidden",
+              width: "100%",
+              height: "100%",
+              position: "absolute",
+              zIndex: isFlipped ? -1 : 1, // Adjust z-index based on flip state
+            }}
+          >
+            <CardFront question={question} />
+          </motion.div>
+          <motion.div
+            style={{
+              backfaceVisibility: "hidden",
+              width: "100%",
+              height: "100%",
+              position: "absolute",
+              rotateY: 180,
+              zIndex: isFlipped ? 1 : -1, // Adjust z-index based on flip state
+            }}
+          >
+            <CardBack answer={answer} />
+          </motion.div>
+        </motion.div>
       </motion.div>
-      <motion.div
-        variants={variants}
-        animate={isFlipped ? "back" : "front"}
-        transition={{ duration: 0.6, flip: Infinity }}
-        style={{
-          backfaceVisibility: "hidden",
-          transformStyle: "preserve-3d",
-          rotateY: 180,
-        }}
-      >
-        {!isFlipped && (
-          <div className="card bg-slate-700 shadow-xl p-0 mx-8 my-6">
-            <div
-              className="card-body py-2 px-4"
-              style={{ overflowY: "auto", maxHeight: "700px" }}
-            >
-              <h2 className="card-title">Antwort</h2>
-              <div className="divider m-0"></div>
-              <div
-                className="mb-4"
-                style={{ overflowY: "auto", maxHeight: "460px" }}
-              >
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Blanditiis veritatis soluta pariatur molestiae consectetur at
-                  error nisi repellat. Tempore eius distinctio nostrum obcaecati
-                  ipsa architecto vel et ab rerum quaerat?Lorem ipsum dolor, sit
-                  amet consectetur adipisicing elit. Blanditiis veritatis soluta
-                  pariatur molestiae consectetur at error nisi repellat. Tempore
-                  eius distinctio nostrum obcaecati ipsa architecto vel et ab
-                  rerum quaerat?Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Blanditiis veritatis soluta pariatur
-                  molestiae consectetur at error nisi repellat. Tempore eius
-                  distinctio nostrum obcaecati ipsa architecto vel et ab rerum
-                  quaerat?Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Blanditiis veritatis soluta pariatur molestiae
-                  consectetur at error nisi repellat. Tempore eius distinctio
-                  nostrum obcaecati ipsa architecto vel et ab rerum quaerat?
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-      </motion.div>
-      <button className="btn btn-primary mt-10" onClick={handleFlip}>
-        Flip
-      </button>
-    </>
+    </div>
   );
 };
 

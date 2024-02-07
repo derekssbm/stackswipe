@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Stack from "@/components/Stack";
+import StackSkeleton from "@/components/StackSkeleton";
 
 interface CardProps {
   cardid: number;
@@ -20,6 +21,7 @@ interface StackProps {
 
 const StackPage = () => {
   const [stacks, setStacks] = useState<StackProps[]>([]); // Initial state as an empty array
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -28,6 +30,7 @@ const StackPage = () => {
         .then((data) => {
           const { stacks } = data;
           setStacks(stacks); // Set the stacks array directly
+          setIsLoading(false);
           console.log(stacks);
         })
         .catch((error) => {
@@ -37,16 +40,29 @@ const StackPage = () => {
   }, []);
 
   return (
-    <div>
-      {stacks.map((stack) => (
-        <Stack
-          key={stack.stackid}
-          stackid={stack.stackid}
-          name={stack.name}
-          cards={stack.cards}
-        />
-      ))}
-    </div>
+    <>
+      <div>
+        {isLoading
+          ? Array(5)
+              .fill(null)
+              .map((_, index) => (
+                <StackSkeleton key={index} stackid={0} name={""} cards={[]} />
+              ))
+          : stacks.map((stack) => (
+              <Stack
+                key={stack.stackid}
+                stackid={stack.stackid}
+                name={stack.name}
+                cards={stack.cards}
+              />
+            ))}
+      </div>
+      <div className="flex justify-center">
+        <button className="btn btn-default btn-outline btn-sm w-60 mb-5">
+          Add Stack
+        </button>
+      </div>
+    </>
   );
 };
 
